@@ -51,9 +51,11 @@
           <nldd-form-field label="Link naar een relevant document" optional>
             {#- Not type="url": the browser then rejects an address without https://, which feedback.js accepts and completes. #}
             <nldd-text-field keyboard="url" name="related_docs[]" no-spellcheck></nldd-text-field>
-            {#- The rule passes an empty value: the field is optional, and a rule that fails blocks the whole form. #}
+            {#- The rule passes an empty value and spaces around an address: the field is optional, a pasted
+                address often ends in a space, and a rule that fails blocks the whole form. feedback.js reads
+                this rule, so the two cannot disagree. #}
             <nldd-validation-list>
-              <nldd-validation-item match="^(\S+\.\S+)?$" hint>Een webadres zonder spaties, bijvoorbeeld https://www.rijksoverheid.nl/onderwerpen.</nldd-validation-item>
+              <nldd-validation-item match="^\s*(\S+\.\S+)?\s*$" hint>Een webadres zonder spaties, bijvoorbeeld https://www.rijksoverheid.nl/onderwerpen.</nldd-validation-item>
             </nldd-validation-list>
           </nldd-form-field>
         </div>

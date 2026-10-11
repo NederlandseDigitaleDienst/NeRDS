@@ -56,10 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^https?:\/\//i.test(url) ? url : 'https://' + url;
   }
 
-  // As strict as the rule under the field in feedback.html. Whatever that rule
+  // The rule under the link field in feedback.html. The component checks the
+  // raw value against it and blocks the form when it fails, so whatever it
   // rejects has to fail here too, or the form stays put without a message.
+  const linkRule = new RegExp(links.querySelector('nldd-validation-item').getAttribute('match'), 'u');
+
   function isValidUrl(url) {
-    if (!url.includes('.') || /\s/.test(url)) return false;
+    if (!url.includes('.')) return false;
     try {
       return ['http:', 'https:'].includes(new URL(normalizeUrl(url)).protocol);
     } catch (error) {
@@ -89,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     links.querySelectorAll('nldd-text-field').forEach((field) => {
       const value = (field.value || '').trim();
-      field.invalid = value !== '' && !isValidUrl(value);
+      field.invalid = !linkRule.test(field.value || '') || (value !== '' && !isValidUrl(value));
       if (field.invalid) {
         failing.push(field);
         messages.push('Link naar een relevant document: vul een webadres in, bijvoorbeeld https://www.rijksoverheid.nl/onderwerpen.');
