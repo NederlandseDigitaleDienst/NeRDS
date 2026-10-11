@@ -56,8 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
     return /^https?:\/\//i.test(url) ? url : 'https://' + url;
   }
 
+  // As strict as the rule under the field in feedback.html. Whatever that rule
+  // rejects has to fail here too, or the form stays put without a message.
   function isValidUrl(url) {
-    if (!url.includes('.')) return false;
+    if (!url.includes('.') || /\s/.test(url)) return false;
     try {
       return ['http:', 'https:'].includes(new URL(normalizeUrl(url)).protocol);
     } catch (error) {
