@@ -3,6 +3,8 @@
     <nldd-top-title-bar slot="header" text="Zoeken" heading-level="2" dismiss-text="Sluit"></nldd-top-title-bar>
     <nldd-container padding="16" gap="16">
       <nldd-search-field id="search-query" name="query" placeholder="Zoek in de NeRDS"></nldd-search-field>
+      {#- In the DOM from the start, so that a screen reader reads the outcome when it changes. #}
+      <p id="search-status" class="visually-hidden" role="status"></p>
       <nldd-list id="search-results" appearance="box-tinted" accessible-label="Zoekresultaten">
         <nldd-inline-dialog slot="empty" icon="search" text="Typ om te zoeken" supporting-text="Je zoekt in alle richtlijnen en pagina's."></nldd-inline-dialog>
       </nldd-list>

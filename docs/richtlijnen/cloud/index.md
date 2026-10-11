@@ -54,7 +54,7 @@ De [VNG-handreiking Eisen aan gemeentelijke Cloudvoorzieningen (pdf)](https://vn
 
 ### Europa
 
-Het [EU Cloud Sovereignty Framework](https://commission.europa.eu/document/09579818-64a6-4dd5-9577-446ab6219113_en){:target="_blank"} deelt clouddiensten in op de niveaus SEAL-0 tot en met SEAL-4. Het cloudbeleid noemt het als hulpmiddel bij de leveranciersselectie.
+Het [EU Cloud Sovereignty Framework](https://commission.europa.eu/document/09579818-64a6-4dd5-9577-446ab6219113_en){:target="_blank" lang="en"} deelt clouddiensten in op de niveaus SEAL-0 tot en met SEAL-4. Het cloudbeleid noemt het als hulpmiddel bij de leveranciersselectie.
 
 ## Hoe pas je het toe?
 
@@ -133,7 +133,7 @@ Zie [Cloud: wanneer doe je wat?](fases.md).
 - [Kamerbrief Verkenning soevereine overheidscloud](https://www.tweedekamer.nl/kamerstukken/brieven_regering/detail?id=2026Z15306&did=2026D34379) - 1 juli 2026
 - [Implementatiekader risicoafweging](https://open.overheid.nl/documenten/ronl-734f947ec6465e4f75a56bed82fe64a1135f71a8/pdf) - Kader voor de risicoafweging bij cloudgebruik
 - [VNG-handreiking Eisen aan gemeentelijke Cloudvoorzieningen (pdf)](https://vng.nl/sites/default/files/2026-07/handreiking-cloud-voor-gemeenten.pdf) - met programma van eisen
-- [EU Cloud Sovereignty Framework](https://commission.europa.eu/document/09579818-64a6-4dd5-9577-446ab6219113_en) - Europese soevereiniteitsniveaus SEAL-0 tot en met SEAL-4
+- [EU Cloud Sovereignty Framework](https://commission.europa.eu/document/09579818-64a6-4dd5-9577-446ab6219113_en){: lang="en" } - Europese soevereiniteitsniveaus SEAL-0 tot en met SEAL-4
 - [Nederlandse Digitaliseringsstrategie (NDS) prioriteit Cloud](https://www.digitaleoverheid.nl/nederlandse-digitaliseringsstrategie-nds/6-prioriteiten-voor-een-overheid/prioriteit-1-cloud/){:target="_blank"}
 - [Visie digitale autonomie en soevereiniteit van de overheid](https://www.rijksoverheid.nl/documenten/rapporten/2025/12/18/bijlage-2-visie-digitale-autonomie-en-soevereiniteit-van-de-overheid) - Rijksbrede visie
 - [BIO (Baseline Informatiebeveiliging Overheid)](https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/cybersecurity/bio-en-ensia/) - Beveiligingsnormen overheid

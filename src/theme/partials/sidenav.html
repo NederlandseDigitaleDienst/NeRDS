@@ -42,7 +42,9 @@
     {%- for subheading in heading.children %}
     <nldd-list-item href="{{ subheading.url }}">
       <nldd-spacer-cell size="16"></nldd-spacer-cell>
-      <nldd-text-cell size="sm" color="secondary" text="{{ subheading.title | striptags | e }}"></nldd-text-cell>
+      {#- The list is flat, so the indent is all that says this row belongs to
+          the one above. The name a screen reader reads carries the parent. -#}
+      <nldd-text-cell size="sm" color="secondary"><span class="visually-hidden">{{ heading.title | striptags | e }}: </span>{{ subheading.title | striptags | e }}</nldd-text-cell>
     </nldd-list-item>
     {%- endfor %}
     {%- endfor %}

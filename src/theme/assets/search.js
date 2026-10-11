@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // base is "/", and "//search/worker.js" would point at another host.
   const base_url = (document.documentElement.dataset.baseUrl || '.').replace(/\/+$/, '');
   const emptyState = results.querySelector('[slot="empty"]');
+  const status = document.getElementById('search-status');
+  let announcement = null;
   let worker = null;
   let ready = false;
   let pendingQuery = '';
@@ -38,11 +40,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ready) worker.postMessage({ query: pendingQuery });
   }
 
+  // Focus stays in the field while the list changes, so the outcome goes to
+  // a status region. After a pause: one message per query, not one per key.
+  function announce(message) {
+    clearTimeout(announcement);
+    if (!status) return;
+    announcement = setTimeout(() => { status.textContent = message; }, 600);
+  }
+
   function render(found) {
     results.querySelectorAll('nldd-list-item').forEach((item) => item.remove());
     if (found === null) {
       emptyState.text = 'Typ om te zoeken';
       emptyState.supportingText = "Je zoekt in alle richtlijnen en pagina's.";
+      announce('');
       return;
     }
     emptyState.text = 'Geen resultaten';
@@ -53,7 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const key = result.location.split('#')[0] + '|' + result.title;
       return seen.has(key) ? false : seen.add(key);
     });
-    unique.slice(0, 20).forEach((result) => {
+    const shown = unique.slice(0, 20);
+    if (shown.length === 0) announce('Geen resultaten');
+    else if (shown.length < unique.length) announce(`De eerste ${shown.length} van ${unique.length} resultaten`);
+    else announce(shown.length === 1 ? '1 resultaat' : `${shown.length} resultaten`);
+    shown.forEach((result) => {
       const item = document.createElement('nldd-list-item');
       item.setAttribute('href', base_url + '/' + result.location);
       const cell = document.createElement('nldd-text-cell');

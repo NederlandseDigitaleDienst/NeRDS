@@ -102,7 +102,7 @@ Zie [Toegankelijkheid: wanneer doe je wat?](fases.md).
 
 ### Beleid, wetten en standaarden
 
-- [Web Content Accessibility Guidelines (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) - Wereldwijde technische standaard voor digitale toegankelijkheid
+- [Web Content Accessibility Guidelines (WCAG 2.2)](https://www.w3.org/TR/WCAG22/){: lang="en" } - Wereldwijde technische standaard voor digitale toegankelijkheid
 - [EN 301 549](https://www.etsi.org/deliver/etsi_en/301500_301599/301549/03.02.01_60/en_301549v030201p.pdf) - Europese norm voor hardware/niet-web software
 - [Tijdelijk besluit digitale toegankelijkheid overheid](https://wetten.overheid.nl/BWBR0040936/2018-07-01) - Overheidssites moeten voldoen aan toegankelijkheidseisen zoals vastgelegd in EN 301 549/WCAG 2.1 en daarover verantwoordelijkheid moeten afleggen in een gepubliceerde toegankelijkheidsverklaring.
 
