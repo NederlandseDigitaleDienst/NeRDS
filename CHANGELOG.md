@@ -2,6 +2,14 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.3.6](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.5...v0.3.6) (2026-10-11)
+
+
+### Verbeterd
+
+* voorbeeldvenster voor een cluster zegt wat verplicht is en wat er misgaat ([#442](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/442)) ([bd1a15a](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/bd1a15a099abbd0dd94436432b059d7a6a3b3df6))
+* zoekresultaten worden voorgelezen en de inhoudsopgave noemt het hoofddeel ([#441](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/441)) ([8b43e38](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/8b43e387d9885360568ebf17f7f91fda4a2df93b))
+
 ## [0.3.5](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.4...v0.3.5) (2026-10-11)
 
 
