@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.3.7](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.6...v0.3.7) (2026-10-11)
+
+
+### Verbeterd
+
+* feedbackformulier accepteert een link met een spatie ervoor of erachter ([#444](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/444)) ([a63e9e0](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/a63e9e02e11a782de3ef2c1fc77fe872cf74aa03))
+
 ## [0.3.6](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.5...v0.3.6) (2026-10-11)
 
 

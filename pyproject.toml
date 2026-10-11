@@ -1,6 +1,6 @@
 [project]
 name = "nrds"
-version = "0.3.6"
+version = "0.3.7"
 description = "Nederlandse Richtlijn Digitale Systemen"
 readme = "README.md"
 requires-python = ">=3.12.0"
