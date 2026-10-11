@@ -9,6 +9,8 @@
   <nldd-page>
     <nldd-top-title-bar slot="header" text="Kubernetes cluster aanmaken" heading-level="2" dismiss-text="Sluit"></nldd-top-title-bar>
     <nldd-container padding="16" gap="16">
+      {#- In the DOM from the start, so that a screen reader reads what changes: the costs and the outcome. #}
+      <p id="cluster-status" class="visually-hidden" role="status"></p>
 
       <nldd-container id="auth-container" gap="16">
         <nldd-title size="4" heading-level="3" text="Authenticatie vereist" supporting-text="Log in om een Kubernetes cluster aan te maken"></nldd-title>
@@ -21,6 +23,8 @@
 
       <nldd-container id="form-container" gap="16" hidden>
         <nldd-button id="back-to-auth" appearance="neutral-transparent" size="sm" start-icon="arrow-left" text="Terug"></nldd-button>
+        <nldd-rich-text><p>Alle velden zijn verplicht.</p></nldd-rich-text>
+        <nldd-banner id="cluster-errors" variant="critical" role="alert" text="Het cluster is nog niet aangemaakt" hidden></nldd-banner>
         <nldd-form id="create-cluster-form">
           <nldd-form-field label="Organisatie">
             <nldd-dropdown>
@@ -32,6 +36,9 @@
           </nldd-form-field>
           <nldd-form-field label="Naam van het cluster">
             <nldd-text-field id="cluster-name" name="cluster-name" required placeholder="mijn-k8s-cluster"></nldd-text-field>
+            <nldd-validation-list>
+              <nldd-validation-item id="cluster-name-required" required>Vul een naam in.</nldd-validation-item>
+            </nldd-validation-list>
           </nldd-form-field>
           <nldd-form-field label="Prijsmodel">
             <nldd-dropdown>
@@ -112,7 +119,7 @@
       </div>
 
       <nldd-container id="result-container" gap="16" hidden>
-        <nldd-inline-dialog variant="success" heading-level="3" text="Cluster succesvol aangemaakt!"></nldd-inline-dialog>
+        <nldd-inline-dialog id="cluster-created" tabindex="-1" variant="success" heading-level="3" text="Cluster succesvol aangemaakt!"></nldd-inline-dialog>
         <nldd-list appearance="box-tinted" accessible-label="Gegevens van het cluster">
           {%- for id, label in [
             ('result-cluster-name', 'Cluster naam'),

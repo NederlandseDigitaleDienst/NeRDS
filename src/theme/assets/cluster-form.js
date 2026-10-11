@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const region = byId('cluster-region');
   const secondaryRegion = byId('cluster-region-secondary');
   const secondaryRegionField = byId('secondary-region-row');
+  const name = byId('cluster-name');
+  const errors = byId('cluster-errors');
+  const status = byId('cluster-status');
 
   const ORGANIZATIONS = [
     { value: 'minbzk', text: 'Ministerie van Binnenlandse Zaken', oin: '00000001800866472000' },
@@ -78,9 +81,39 @@ document.addEventListener('DOMContentLoaded', () => {
     const price = COSTS[tier.value]?.[size.value];
     const factor = multiAz.value === 'true' && tier.value !== 'free' ? MULTI_AZ_MULTIPLIER : 1;
     const euro = (amount) => `€${(amount * factor).toFixed(2).replace('.', ',')}`;
-    byId('monthly-cost').setAttribute('text', euro(price ? price.monthly : 0));
-    byId('yearly-cost').setAttribute('text', euro(price ? price.yearly : 0));
+    const monthly = euro(price ? price.monthly : 0);
+    const yearly = euro(price ? price.yearly : 0);
+    byId('monthly-cost').setAttribute('text', monthly);
+    byId('yearly-cost').setAttribute('text', yearly);
+    // The amounts change far from the field that changed them.
+    if (price) status.textContent = `Geschatte kosten: ${monthly} per maand, ${yearly} per jaar.`;
   }
+
+  // Names every field that is still empty in one message. The browser moves
+  // focus to the first of them; the message tells about the others.
+  function validate() {
+    const label = (field) => field.closest('nldd-form-field').getAttribute('label');
+    const messages = [organization, tier, region, secondaryRegion, size]
+      .filter((select) => select.required && !select.value)
+      .map((select) => `${label(select)}: kies een waarde.`);
+    name.invalid = !(name.value || '').trim();
+    if (name.invalid) messages.splice(organization.value ? 0 : 1, 0, `${label(name)}: vul een naam in.`);
+    errors.setAttribute('supporting-text', messages.join(' '));
+    errors.hidden = messages.length === 0;
+    return messages.length === 0;
+  }
+
+  // The browser rejects an empty required field before the submit event, so
+  // the submit handler never runs. `invalid` does not bubble; capture it.
+  let judging = false;
+  form.addEventListener('invalid', () => {
+    if (judging) return;
+    judging = true;
+    queueMicrotask(() => {
+      validate();
+      judging = false;
+    });
+  }, true);
 
   function updateRegions() {
     const multiRegion = multiAz.value === 'true';
@@ -118,7 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function reset() {
     form.querySelector('form').reset();
-    byId('cluster-name').value = '';
+    name.value = '';
+    name.invalid = false;
+    errors.hidden = true;
+    status.textContent = '';
     setOptions(organization, [], 'Selecteer een organisatie');
     updateTier();
     showStep('auth');
@@ -167,6 +203,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'kubectl get nodes',
     ].join('\n');
     showStep('result');
+    // The button that was pressed is gone; without this, focus is nowhere.
+    status.textContent = 'Cluster succesvol aangemaakt.';
+    byId('cluster-created').focus();
   }
 
   opener.addEventListener('click', () => {
@@ -192,10 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (!validate()) return;
     const data = new FormData(form.querySelector('form'));
     const values = {
       organization: data.get('organization'),
-      name: byId('cluster-name').value,
+      name: name.value,
       region: data.get('cluster-region'),
       secondaryRegion: data.get('cluster-region-secondary'),
       size: data.get('cluster-size'),
