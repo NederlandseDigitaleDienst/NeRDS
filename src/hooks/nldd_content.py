@@ -100,7 +100,7 @@ def _replace_admonition(match):
     level = min((levels[-1] if levels else 1) + 1, 6)
 
     return (
-        '<nldd-box data-width="main"><nldd-container padding="16" gap="4">'
+        '<nldd-box data-rich-text-width="main"><nldd-container padding="16" gap="4">'
         f'<nldd-title size="6" heading-level="{level}" text="{title}"></nldd-title>'
         f"<nldd-rich-text>{body}</nldd-rich-text>"
         "</nldd-container></nldd-box>"

@@ -165,8 +165,8 @@ def check_markers(pages):
         for name in sorted(parser.classes):
             if name.startswith(OLD_CLASS_MARKERS):
                 findings.append(f"{route}: class '{name}' belongs to the previous theme")
-        if "nldd-app-view" not in parser.tags:
-            findings.append(f"{route}: page has no <nldd-app-view>, so the shell did not render")
+        if "nldd-shell" not in parser.tags:
+            findings.append(f"{route}: page has no <nldd-shell>, so the shell did not render")
     return findings
 
 

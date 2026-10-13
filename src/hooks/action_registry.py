@@ -92,7 +92,7 @@ def on_page_content(html, page, config, files):
 
         level = int(match.group('level'))
 
-        return f'''<nldd-box data-width="main">
+        return f'''<nldd-box data-rich-text-width="main">
   <nldd-container padding="16" gap="16">
     <nldd-title size="4" heading-level="{level}" text="{escape(_plain_text(match.group('heading')))}"></nldd-title>
 {_generate_notice_html(match.group('notice'))}    <nldd-collection layout="grid" item-width="240px" gap="12"{attributes}>

@@ -50,14 +50,6 @@ nldd-sidebar-section[collapsed] .sidebar-trigger {
 	list-style: none;
 }
 
-/* A word in the page title that is wider than the screen breaks instead of
-   pushing the page wider. Not `anywhere` and no automatic hyphens: with the
-   balanced wrapping of headings those break words that would fit on a line
-   of their own. */
-nldd-rich-text h1 {
-	overflow-wrap: break-word;
-}
-
 /* A link around an image is an inline box around a block: its focus ring
    collapses to a line. As a block of its own the ring goes around the image. */
 nldd-rich-text a:has(> img) {

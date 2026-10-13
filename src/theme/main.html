@@ -31,7 +31,7 @@
   {%- endfor %}
 </head>
 <body>
-<nldd-app-view>
+<nldd-shell>
   <nldd-page>
     {% include "partials/header.html" %}
 
@@ -69,7 +69,7 @@
 
     {% include "partials/footer.html" %}
   </nldd-page>
-</nldd-app-view>
+</nldd-shell>
 {% include "partials/search.html" %}
 {% include "partials/feedback.html" %}
 {%- if page and 'id="open-cluster-form"' in page.content %}

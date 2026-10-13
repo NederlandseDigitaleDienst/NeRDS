@@ -3,23 +3,25 @@
   {%- for item in section.item.children %}
   {%- if item.children %}
   {%- set index = item.children | first %}
+  {#- The pages under a guideline sit in its row, in the slot for children:
+      a list inside the list item, so a screen reader hears the level. -#}
   <nldd-list-item href="{{ index.url | url }}"{% if index.active %} current{% endif %}>
     <nldd-text-cell text="{{ item.title | e }}"></nldd-text-cell>
+    {%- for child in item.children[1:] %}
+    <nldd-list-item slot="children" href="{{ child.url | url }}"{% if child.active %} current{% endif %}>
+      <nldd-spacer-cell size="16"></nldd-spacer-cell>
+      {#- A page under a guideline is named "Cloud: wanneer doe je wat?". Under
+          its guideline the menu shows only the second part; the first part stays
+          in the name a screen reader reads, so four links do not sound alike. -#}
+      {%- set name = child.title.split(': ', 1) %}
+      {%- if name | length == 2 %}
+      <nldd-text-cell size="sm"><span class="visually-hidden">{{ name[0] | e }}: </span>{{ name[1] | capitalize | e }}</nldd-text-cell>
+      {%- else %}
+      <nldd-text-cell size="sm" text="{{ child.title | e }}"></nldd-text-cell>
+      {%- endif %}
+    </nldd-list-item>
+    {%- endfor %}
   </nldd-list-item>
-  {%- for child in item.children[1:] %}
-  <nldd-list-item href="{{ child.url | url }}"{% if child.active %} current{% endif %}>
-    <nldd-spacer-cell size="16"></nldd-spacer-cell>
-    {#- A page under a guideline is named "Cloud: wanneer doe je wat?". Under
-        its guideline the menu shows only the second part; the first part stays
-        in the name a screen reader reads, so four links do not sound alike. -#}
-    {%- set name = child.title.split(': ', 1) %}
-    {%- if name | length == 2 %}
-    <nldd-text-cell size="sm"><span class="visually-hidden">{{ name[0] | e }}: </span>{{ name[1] | capitalize | e }}</nldd-text-cell>
-    {%- else %}
-    <nldd-text-cell size="sm" text="{{ child.title | e }}"></nldd-text-cell>
-    {%- endif %}
-  </nldd-list-item>
-  {%- endfor %}
   {%- else %}
   <nldd-list-item href="{{ item.url | url }}"{% if item.active %} current{% endif %}>
     <nldd-text-cell text="{{ item.title | e }}"></nldd-text-cell>
@@ -38,15 +40,13 @@
     {%- for heading in headings %}
     <nldd-list-item href="{{ heading.url }}">
       <nldd-text-cell size="sm" text="{{ heading.title | striptags | e }}"></nldd-text-cell>
+      {%- for subheading in heading.children %}
+      <nldd-list-item slot="children" href="{{ subheading.url }}">
+        <nldd-spacer-cell size="16"></nldd-spacer-cell>
+        <nldd-text-cell size="sm" color="secondary" text="{{ subheading.title | striptags | e }}"></nldd-text-cell>
+      </nldd-list-item>
+      {%- endfor %}
     </nldd-list-item>
-    {%- for subheading in heading.children %}
-    <nldd-list-item href="{{ subheading.url }}">
-      <nldd-spacer-cell size="16"></nldd-spacer-cell>
-      {#- The list is flat, so the indent is all that says this row belongs to
-          the one above. The name a screen reader reads carries the parent. -#}
-      <nldd-text-cell size="sm" color="secondary"><span class="visually-hidden">{{ heading.title | striptags | e }}: </span>{{ subheading.title | striptags | e }}</nldd-text-cell>
-    </nldd-list-item>
-    {%- endfor %}
     {%- endfor %}
   </nldd-list>
 </nldd-container>
