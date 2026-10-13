@@ -46,7 +46,8 @@
       "search-open",
       "search-query",
       "search-results",
-      "search-sheet"
+      "search-sheet",
+      "search-status"
     ]
   },
   "Over-NeRDS/CONTRIBUTING/index.html": {
@@ -161,6 +162,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "stel-een-vraag-via-mail",
       "technische-richtlijnen",
@@ -234,6 +236,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "uw-privacy",
       "waarom-gebruiken-wij-geen-cookies"
@@ -302,6 +305,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "vragen-over-auteursrechten"
     ]
@@ -374,6 +378,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "voor-wie-is-deze-richtlijn"
     ]
@@ -430,6 +435,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open"
     ]
   },
@@ -494,6 +500,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "vragen",
       "waarom-verzamelen-wij-je-gegevens",
@@ -551,6 +558,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "toegankelijkheid"
     ]
@@ -564,6 +572,10 @@
       "#031-2026-10-09",
       "#032-2026-10-09",
       "#033-2026-10-10",
+      "#034-2026-10-10",
+      "#035-2026-10-11",
+      "#036-2026-10-11",
+      "#037-2026-10-11",
       "#content",
       "#inhoud",
       "#inhoud_1",
@@ -574,6 +586,10 @@
       "#verbeterd",
       "#verbeterd_1",
       "#verbeterd_2",
+      "#verbeterd_3",
+      "#verbeterd_4",
+      "#verbeterd_5",
+      "#verbeterd_6",
       "#website",
       "#website_1",
       "#website_2",
@@ -592,17 +608,31 @@
       "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/15f2c431df7d5bc85162d43166f27bce15fc5294",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/30e4a4158bf3a9a6ef1b9a7d01ea6dac9cf9bcc1",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/463ca448c1b9c5a4b8fb1b1b205193670705cd62",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/8b43e387d9885360568ebf17f7f91fda4a2df93b",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/a11cb132a7a33f76d90f8e64cdafd65c971a25b3",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/a63e9e02e11a782de3ef2c1fc77fe872cf74aa03",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/bd1a15a099abbd0dd94436432b059d7a6a3b3df6",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/bfd9780cd2d20b215c7660dde698be5df302b4ea",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/commit/fcc13bc470870bf18c0942c8583e5a6062bc5557",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.1.0...v0.1.1",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.1.1...v0.2.0",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.2.0...v0.3.1",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.1...v0.3.2",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.2...v0.3.3",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.3...v0.3.4",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.4...v0.3.5",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.5...v0.3.6",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.6...v0.3.7",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/edit/main/docs/Over-NeRDS/versies.md",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/429",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/431",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/434",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/435",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/437",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/439",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/441",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/442",
+      "https://github.com/NederlandseDigitaleDienst/NeRDS/issues/444",
       "https://github.com/NederlandseDigitaleDienst/NeRDS/releases/tag/v0.1.0",
       "https://overheid.nl/",
       "https://www.digitaleoverheid.nl/",
@@ -624,6 +654,10 @@
       "031-2026-10-09",
       "032-2026-10-09",
       "033-2026-10-10",
+      "034-2026-10-10",
+      "035-2026-10-11",
+      "036-2026-10-11",
+      "037-2026-10-11",
       "content",
       "content-section",
       "feedback-add-link",
@@ -651,10 +685,15 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "verbeterd",
       "verbeterd_1",
       "verbeterd_2",
+      "verbeterd_3",
+      "verbeterd_4",
+      "verbeterd_5",
+      "verbeterd_6",
       "versies",
       "website",
       "website_1",
@@ -721,7 +760,8 @@
       "search-open",
       "search-query",
       "search-results",
-      "search-sheet"
+      "search-sheet",
+      "search-status"
     ]
   },
   "richtlijnen/algoritmen/index.html": {
@@ -810,6 +850,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -893,12 +934,16 @@
       "auth-container",
       "back-to-auth",
       "cert-login",
+      "cluster-created",
+      "cluster-errors",
       "cluster-modal",
       "cluster-name",
+      "cluster-name-required",
       "cluster-region",
       "cluster-region-secondary",
       "cluster-size",
       "cluster-size-field",
+      "cluster-status",
       "cluster-tier",
       "cluster-version",
       "content",
@@ -949,6 +994,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "secondary-region-row",
       "sidebar-open",
       "spinner",
@@ -1069,12 +1115,16 @@
       "beleid-en-kaders",
       "bewezen-praktijken",
       "cert-login",
+      "cluster-created",
+      "cluster-errors",
       "cluster-modal",
       "cluster-name",
+      "cluster-name-required",
       "cluster-region",
       "cluster-region-secondary",
       "cluster-size",
       "cluster-size-field",
+      "cluster-status",
       "cluster-tier",
       "cluster-version",
       "communities-en-trainingen",
@@ -1129,6 +1179,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "secondary-region-row",
       "sidebar-open",
       "soevereine-overheidscloud",
@@ -1221,6 +1272,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -1319,6 +1371,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "strategieen-voor-duurzame-technologie",
       "uitdagingen-en-oplossingen",
@@ -1417,6 +1470,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open"
     ]
   },
@@ -1541,6 +1595,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "trainingen",
       "waarom-is-het-belangrijk"
@@ -1614,6 +1669,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open"
     ]
   },
@@ -1701,6 +1757,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -1793,6 +1850,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "uitdagingen-en-oplossingen",
       "waarom-is-het-belangrijk"
@@ -1893,6 +1951,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open"
     ]
   },
@@ -2016,6 +2075,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2100,6 +2160,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2187,6 +2248,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2271,6 +2333,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2372,6 +2435,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open"
     ]
   },
@@ -2427,7 +2491,7 @@
       "https://github.com/NederlandseDigitaleDienst/ai-plugins",
       "https://github.com/NederlandseDigitaleDienst/ai-plugins#installeren",
       "https://github.com/NederlandseDigitaleDienst/design-system",
-      "https://github.com/NederlandseDigitaleDienst/design-system/blob/main/docs/accessibility.md",
+      "https://github.com/NederlandseDigitaleDienst/design-system/blob/main/docs/ACCESSIBILITY.md",
       "https://gitlab.com/digilab.overheid.nl/ecosystem/wcag-em-reporter",
       "https://inclusive-components.design/#components",
       "https://ishetb1.nl/",
@@ -2506,6 +2570,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2592,6 +2657,7 @@
       "search-query",
       "search-results",
       "search-sheet",
+      "search-status",
       "sidebar-open",
       "waarom-is-het-belangrijk"
     ]
@@ -2645,7 +2711,8 @@
       "search-open",
       "search-query",
       "search-results",
-      "search-sheet"
+      "search-sheet",
+      "search-status"
     ]
   }
 }
