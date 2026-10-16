@@ -21,6 +21,7 @@ Een goed doordachte inkoopstrategie voor technologie zorgt ervoor dat je organis
 - **Duurzaamheid**: Overweeg milieu- en sociale impact van aankopen
 - **Strategische afstemming**: Zorg dat aankopen organisatiedoelen ondersteunen
 - **Wet- en regelgeving**: Voldoe aan aanbestedingsregels en andere regelgeving
+- **Aansluiting bestaande architectuur**: Bevorder interoperabiliteit en voorkom dubbele functionaliteit.
 
 Een goed gedefinieerde inkoopstrategie voor technologie helpt je organisatie betere beslissingen te nemen, risico's te beheersen en waarde te creëren op zowel korte als lange termijn.
 
