@@ -43,6 +43,10 @@ Een goed gedefinieerde inkoopstrategie voor technologie helpt je organisatie bet
 - [PIANOo - Expertisecentrum Aanbesteden](https://www.pianoo.nl/){:target="_blank"} - Kenniscentrum voor inkoop en aanbesteding bij de overheid
 - [Aanbestedingswet 2012](https://wetten.overheid.nl/BWBR0032203/){:target="_blank"} - Wettelijk kader voor overheidsinkoopprocessen
 
+### Naslagwerk
+
+- [De route naar digitale autonomie](https://www.rdi.nl/documenten/2026/07/10/de-route-naar-digitale-autonomie/){:target="_blank"} - Aanbevelingen van de Autoriteit Consument & Markt (ACM), de Autoriteit Financiële Markten (AFM), de Autoriteit Persoonsgegevens (AP), De Nederlandsche Bank (DNB) en de Rijksinspectie Digitale Infrastructuur (RDI)
+
 ## Gerelateerde richtlijnen
 
 - [13. Maak je technologie duurzaam](../duurzaamheid/index.md)
