@@ -71,7 +71,7 @@ jobs:
         run: |
           echo "commit_hash=$(git describe --tags)" >> "$GITHUB_OUTPUT"
 
-      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884  # v10.3.0
 
       # NERDS_BUILD geeft de hook src/hooks/site_version.py dezelfde waarde als
       # de image-tag hieronder, zodat de pagina 'Huidige versie' en het image
@@ -118,7 +118,7 @@ jobs:
       url: ${{ env.SITE_URL }}
     steps:
       - id: deploy
-        uses: RijksICTGilde/zad-actions/deploy@4ac541a57542a22bde95b28f3ace4ee3123acd7a  # v4.2.0
+        uses: RijksICTGilde/zad-actions/deploy@b612e5968bb88c2c9c05da30f0be2e96b98f78c6  # v4.3.2
         with:
           # API-key van het ZAD-project.
           api-key: ${{ secrets.ZAD_API_KEY }}
