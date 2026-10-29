@@ -16,11 +16,10 @@ actions:
     description: Short description of the action
     richtlijn: cloud  # Which guideline this belongs to
     fase: verkenning  # Optional: verkenning, ontwerp, bouw, productie, or live (can also be array)
-    type: tool  # beleid, register, tool, handleiding, or form
+    type: tool  # beleid, register, tool, or handleiding
     action: Starten  # Button text (e.g., "Starten", "Verkennen", "Aanmaken")
     date_added: 27-10-2025  # DD-MM-YYYY format
     status: beschikbaar  # beschikbaar, concept, ontwikkeling, or demo
-    component: optional-component-id  # Only for form type actions
 ```
 
 ### 2. Automatic Filtering
@@ -108,4 +107,3 @@ The `action-registry-schema.json` defines the exact structure. You can validate 
 - **Hook trigger**: Runs on every page build (`on_page_content`)
 - **Pattern matching**: Finds and replaces a whole `direct-aan-de-slag` block, or a `<div class="action-cards"></div>` on its own
 - **Output**: `nldd-card`, `nldd-badge` and `nldd-button`; `scripts/check_site.py` checks the result against the design system
-- **Form components**: The `kubernetes-cluster-form` action opens the demo in `src/theme/partials/cluster-form.html`, driven by `src/theme/assets/cluster-form.js`

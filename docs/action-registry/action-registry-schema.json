@@ -76,7 +76,7 @@
             "type": {
               "type": "string",
               "description": "Category type of the action",
-              "enum": ["beleid", "register", "tool", "handleiding", "form"]
+              "enum": ["beleid", "register", "tool", "handleiding"]
             },
             "action": {
               "type": "string",
@@ -129,10 +129,6 @@
               "type": "string",
               "description": "Current status/availability of the action",
               "enum": ["beschikbaar", "concept", "ontwikkeling", "demo"]
-            },
-            "component": {
-              "type": "string",
-              "description": "Optional component identifier for form-type actions"
             }
           },
           "additionalProperties": false

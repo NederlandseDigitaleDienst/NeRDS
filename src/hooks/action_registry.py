@@ -277,22 +277,12 @@ def _sort_actions_by_fase(actions):
 
 def _generate_button_html(action):
     """
-    Generate the button of a card based on action type and source.
+    Generate the button of a card based on its source.
     """
-    action_type = action.get('type', '')
     action_label = escape(action.get('action', ''))
     name = escape(action.get('name', ''))
     source = action.get('source')
-    component = action.get('component')
     label = f'accessible-label="{action_label}: {name}"'
-
-    # For form type actions with a component
-    if action_type == 'form' and component:
-        if component == 'kubernetes-cluster-form':
-            return (
-                f'<nldd-button id="open-cluster-form" appearance="secondary" size="sm" '
-                f'popup-type="dialog" text="{action_label}" {label}></nldd-button>'
-            )
 
     # For actions without a source
     if not source:

@@ -83,17 +83,6 @@ actions:
     action: Ontdekken
     date_added: 08-12-2025
     status: beschikbaar
-  - id: kubernetes-service
-    name: Kubernetes Service
-    source: null
-    description: "Beheerde K8s met compliance"
-    richtlijn: cloud
-    fase: bouw
-    type: form
-    action: Aanmaken
-    date_added: 08-12-2025
-    status: demo
-    component: kubernetes-cluster-form
   - id: standaard-voor-publieke-code
     name: Standaard voor publieke code
     source: https://www.standaardvoorpubliekecode.nl/
