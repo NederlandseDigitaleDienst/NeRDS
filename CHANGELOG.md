@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.3.9](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.8...v0.3.9) (2026-10-29)
+
+
+### Verbeterd
+
+* demo voor het aanmaken van een Kubernetes-cluster verwijderd ([#453](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/453)) ([f28eabf](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/f28eabfd8f7cde91b91dd9d1a949448001741558))
+
 ## [0.3.8](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.7...v0.3.8) (2026-10-13)
 
 
