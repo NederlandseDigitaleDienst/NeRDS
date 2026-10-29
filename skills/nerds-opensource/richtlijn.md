@@ -42,9 +42,7 @@ Start met verkennen van bestaande open source oplossingen voordat je zelf iets b
 
 Werk open vanaf dag 1: begin met een publieke repository vanaf het start van je project. Dit voorkomt kostbare retrofitting en bevordert incrementele security improvements. Kies een geschikte open source licentie (bij voorkeur EUPL-1.2 voor overheidscode).
 
-Ontwikkelen & ontwerpen
-
-**Praktische tips**
+**Praktische tips voor ontwikkelen en ontwerpen**
 
 - **Start met een publieke repository** - Begin vanaf dag 1 met een publieke GitHub of GitLab repository.
 - **Kies EUPL-1.2 licentie** - De aanbevolen licentie voor Nederlandse overheidscode. Zie [licentieadvies](https://opensourcewerken.nl/page/view/677bb847-79b5-42b2-8a63-e7bb2e074530/softwarelicenties) voor meer informatie.
@@ -55,9 +53,7 @@ Ontwikkelen & ontwerpen
 - **Gebruik [open standaarden](https://www.forumstandaardisatie.nl/open-standaarden)** - Zorg dat je architectuur interoperabel is (zie Gebruik open standaarden (skill `/nerds-standaarden`)).
 - **Documenteer ontwerpbeslissingen** - Leg vast waarom je bepaalde technologiekeuzes maakt. Gebruik hiervoor bijvoorbeeld een [Architectural Decision Record van Gov UK](https://www.gov.uk/government/publications/architectural-decision-record-framework/architectural-decision-record-framework).
 
-Inkopen
-
-**Praktische tips**
+**Praktische tips voor inkopen**
 
 - **Neem Standaarden op in de inkoopvoorwaarde** - Zie de [Instructie Rijksdienst bij aanschaf ICT-diensten of ICT-producten](https://wetten.overheid.nl/BWBR0024717/2008-11-23) en [Opensource Gereedschapskist voor het aanbesteden van standaardsoftware VWS](https://minvws.opensourcewerken.nl/open-source-gereedschapskist-voor-het-aanbesteden-van-standaardsoftware/).
 - **Controleer de maturiteit** - Is het project actief onderhouden en stabiel?

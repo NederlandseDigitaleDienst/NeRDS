@@ -49,9 +49,7 @@ Toegankelijkheid en inclusie zijn geen toevoeging, maar een uitgangspunt. Denk v
 
 Implementeer toegankelijkheid volgens erkende standaarden en richtlijnen. De WCAG 2.2 (minimaal niveau AA) en EN 301 549 bieden concrete criteria voor toegankelijke digitale systemen. Dit is niet alleen een wettelijke verplichting, maar maakt digitale systemen ook robuust en toekomstbestendig.
 
-Ontwikkelen & ontwerpen
-
-**Praktische tips**
+**Praktische tips voor ontwikkelen en ontwerpen**
 
 - **Test met echte gebruikers** – Betrek mensen die hulptechnologie gebruiken.
 - **Volg WCAG 2.2 AA** – Gebruik dit als minimumstandaard voor alle digitale systemen (zie [WCAG Uitleg van NLDS](https://nldesignsystem.nl/wcag/)).
@@ -66,9 +64,7 @@ Ontwikkelen & ontwerpen
 - **Bouw je in de Rijkshuisstijl? Gebruik het [NLDD Designsysteem](https://github.com/NederlandseDigitaleDienst/design-system)** – De web components leveren de juiste ARIA, toetsenbordbediening, focusring en kleurcontrast volgens WCAG 2.1 AA. Met de [skills voor Claude Code en Cursor](https://github.com/NederlandseDigitaleDienst/ai-plugins) weet een AI-codeerassistent wat het systeem regelt en wat je zelf nog moet doen.
 - **Vermijd PDF's** – Gebruik bij voorkeur HTML; zijn PDF's onvermijdelijk, gebruik dan toegankelijke standaarden (bijv. [PDF/UA](https://www.forumstandaardisatie.nl/open-standaarden/pdfua)).
 
-Inkopen van toegankelijke technologie
-
-**Praktische tips**
+**Praktische tips voor het inkopen van toegankelijke technologie**
 
 - **Gebruik EN 301 549 in aanbestedingen** – Neem toegankelijkheid expliciet op als eis (zie [Pianoo](https://www.pianoo.nl/nl/factsheet-inkoop-digitale-toegankelijkheid))
 - **Kies leveranciers met ervaring** – Vraag naar eerdere toegankelijke projecten.

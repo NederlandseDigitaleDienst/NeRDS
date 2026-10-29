@@ -102,7 +102,7 @@ Als je jouw suggestie nog steeds wilt doen, kan je een [Issue](https://github.co
 2. Beschrijf duidelijk jouw suggestie en geef een heldere toelichting en onderbouwing waarom dit een goede toevoeging zal zijn aan de NeRDS
 3. Het team van de NeRDS zal deze issue labelen als `enhancement` en pakt jouw issue zo snel mogelijk op. Mogelijk neemt het team van de NeRDS contact op voor een verduidelijking of een oplossing.
 
-> Afhankelijk van de complexiteit en het onderwerp van jouw suggestie kan het even duren voordat deze wordt opgepakt door het team van de NeRDS.
+Afhankelijk van de complexiteit en het onderwerp van jouw suggestie kan het even duren voordat deze wordt opgepakt door het team van de NeRDS.
 
 ### Een pull-request maken
 

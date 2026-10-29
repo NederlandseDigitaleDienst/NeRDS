@@ -105,7 +105,7 @@ Door technologische duurzaamheid te prioriteren, kunnen overheidsorganisaties hu
 
 - [Duurzame en sociale doelen van de overheid](https://www.denkdoeduurzaam.nl/doelen)
 - [PIANOo's MVI-criteria voor ICT](https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/productgroepen-en-mvi-criteria)
-- [Position Paper Enterprise Architecture Principles voor Duurzaamheid (NCDD)](https://coalitieduurzamedigitalisering.nl/wp-content/uploads/Position-Paper-%E2%80%93-Enterprise-Architecture-Principles-for-Sustainability.pdf)
+- [<span lang="en">Position Paper Enterprise Architecture Principles</span> voor Duurzaamheid (NCDD)](https://coalitieduurzamedigitalisering.nl/wp-content/uploads/Position-Paper-%E2%80%93-Enterprise-Architecture-Principles-for-Sustainability.pdf)
 
 ## Gerelateerde richtlijnen
 
