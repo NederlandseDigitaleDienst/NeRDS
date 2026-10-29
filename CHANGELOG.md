@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.3.10](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.9...v0.3.10) (2026-10-29)
+
+
+### Verbeterd
+
+* NLDD Designsysteem 0.13.1 ([#456](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/456)) ([502b7d7](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/502b7d78213770ac7815bcb5ba6749ffa7daf579))
+
 ## [0.3.9](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.8...v0.3.9) (2026-10-29)
 
 
