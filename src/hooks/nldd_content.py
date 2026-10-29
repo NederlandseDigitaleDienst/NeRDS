@@ -164,4 +164,4 @@ def _generate_guideline_cards(page, config, files, heading_level):
   </nldd-card>'''
         )
 
-    return '<nldd-collection layout="grid" item-width="280px">\n' + "\n".join(cards) + "\n</nldd-collection>"
+    return '<nldd-collection layout="grid" item-min-width="280px">\n' + "\n".join(cards) + "\n</nldd-collection>"

@@ -95,7 +95,7 @@ def on_page_content(html, page, config, files):
         return f'''<nldd-box data-rich-text-width="main">
   <nldd-container padding="16" gap="16">
     <nldd-title size="4" heading-level="{level}" text="{escape(_plain_text(match.group('heading')))}"></nldd-title>
-{_generate_notice_html(match.group('notice'))}    <nldd-collection layout="grid" item-width="240px" gap="12"{attributes}>
+{_generate_notice_html(match.group('notice'))}    <nldd-collection layout="grid" item-min-width="240px" gap="12"{attributes}>
 {_generate_action_cards_html(filtered_actions, level + 1)}
     </nldd-collection>
   </nldd-container>
@@ -116,7 +116,7 @@ def on_page_content(html, page, config, files):
         )
         if not filtered_actions:
             return ''
-        return f'''<nldd-collection layout="grid" item-width="240px" gap="12"{attributes}>
+        return f'''<nldd-collection layout="grid" item-min-width="240px" gap="12"{attributes}>
 {_generate_action_cards_html(filtered_actions)}
 </nldd-collection>'''
 
