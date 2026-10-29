@@ -212,7 +212,6 @@ def _generate_action_cards_html(actions, heading_level=4):
     status_colors = {
         'beschikbaar': 'success',
         'ontwikkeling': 'warning',
-        'demo': 'accent',
         'concept': 'neutral',
     }
 

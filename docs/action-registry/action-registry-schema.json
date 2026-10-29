@@ -10,7 +10,7 @@
         "description": "Array of all available actions",
         "items": {
           "type": "object",
-          "required": ["id", "name", "description", "richtlijn", "type", "action", "date_added", "status"],
+          "required": ["id", "name", "description", "richtlijn", "action", "date_added", "status"],
           "properties": {
             "id": {
               "type": "string",
@@ -73,11 +73,6 @@
               ],
               "description": "Guideline category this action belongs to (can be string or array)"
             },
-            "type": {
-              "type": "string",
-              "description": "Category type of the action",
-              "enum": ["beleid", "register", "tool", "handleiding"]
-            },
             "action": {
               "type": "string",
               "description": "Action label/button text",
@@ -85,9 +80,7 @@
                 "Verkennen",
                 "Registreren",
                 "Starten",
-                "Aanmaken",
                 "Bekijken",
-                "Aanvragen",
                 "Leren",
                 "Ontdekken",
                 "Scannen",
@@ -128,7 +121,7 @@
             "status": {
               "type": "string",
               "description": "Current status/availability of the action",
-              "enum": ["beschikbaar", "concept", "ontwikkeling", "demo"]
+              "enum": ["beschikbaar", "concept", "ontwikkeling"]
             }
           },
           "additionalProperties": false

@@ -16,10 +16,9 @@ actions:
     description: Short description of the action
     richtlijn: cloud  # Which guideline this belongs to
     fase: verkenning  # Optional: verkenning, ontwerp, bouw, productie, or live (can also be array)
-    type: tool  # beleid, register, tool, or handleiding
-    action: Starten  # Button text (e.g., "Starten", "Verkennen", "Aanmaken")
+    action: Starten  # Button text (e.g., "Starten", "Verkennen", "Bekijken")
     date_added: 27-10-2025  # DD-MM-YYYY format
-    status: beschikbaar  # beschikbaar, concept, ontwikkeling, or demo
+    status: beschikbaar  # beschikbaar, concept, or ontwikkeling
 ```
 
 ### 2. Automatic Filtering

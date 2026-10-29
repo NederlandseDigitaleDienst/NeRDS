@@ -219,7 +219,7 @@ def action_lists(text: str) -> str:
         selected = hook._filter_actions(
             list(actions()), guideline.group(1) if guideline else None, phase.group(1) if phase else None
         )
-        # Only what exists. The registry also holds ideas and demo items
+        # Only what exists. The registry also holds ideas and work in progress
         # without an address; on the site a badge and a notice mark those, but
         # an assistant reading a plain list would recommend them as tools.
         selected = [action for action in selected if action.get("source")]
