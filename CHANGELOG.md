@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.3.14](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.13...v0.3.14) (2026-10-29)
+
+
+### Verbeterd
+
+* huidige pagina in het zijmenu weer zoals het designsysteem hem toont ([#464](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/464)) ([f5452e7](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/f5452e72a2b7061c4eabfce83198d5912cd06e3e))
+
 ## [0.3.13](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.12...v0.3.13) (2026-10-29)
 
 
