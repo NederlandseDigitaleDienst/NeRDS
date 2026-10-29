@@ -1,10 +1,12 @@
 {#- With an href the skip link is a real link to the content. Without one the
     component focuses its next sibling, which here is the noscript block. -#}
 <nldd-skip-link slot="header" href="#content" text="Ga direct naar de inhoud">
+  {#- No logo-href: the logo names the Nederlandse Digitale Dienst, so as a link
+      to the NeRDS start page its name would promise another destination. The
+      website title is the link home. -#}
   <nldd-top-navigation-bar
     logo-title="Nederlandse Digitale Dienst"
     logo-subtitle="Ministerie van Economische Zaken en Klimaat"
-    logo-href="{{ nav.homepage.url | url if nav.homepage else base_url }}"
     website-title="Nederlandse Richtlijn Digitale Systemen"
     website-href="{{ nav.homepage.url | url if nav.homepage else base_url }}"
   >
