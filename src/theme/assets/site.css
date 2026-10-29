@@ -79,7 +79,7 @@ nldd-rich-text details.expander {
 	/* Rich text shrinkwraps what it does not know; this reads at the text measure. */
 	grid-column: main;
 	justify-self: stretch;
-	border: var(--semantics-surfaces-border-width) solid var(--semantics-surfaces-tinted-border-color);
+	border: var(--semantics-surfaces-highlight-border-width) solid var(--semantics-surfaces-tinted-highlight-border-color);
 	border-radius: var(--semantics-surfaces-corner-radius);
 	background-color: var(--semantics-surfaces-tinted-background-color);
 }

@@ -10,7 +10,7 @@ hide:
   <nldd-banner variant="warning" dismissible text="In ontwikkeling" supporting-text="De NeRDS zijn nog in ontwikkeling. Bijdragen? Gebruik de knop Feedback bovenaan de pagina."></nldd-banner>
 </nldd-simple-section>
 
-<nldd-hero id="content" main-background="lintblauw" main-width="full">
+<nldd-hero id="content" main-width="full">
   <nldd-title color="inherit" size="1" heading-level="1" overline="Versie {{ version }}" text="Nederlandse Richtlijn Digitale Systemen (NeRDS)"></nldd-title>
   <nldd-spacer size="16"></nldd-spacer>
   <nldd-rich-text color="inherit">
