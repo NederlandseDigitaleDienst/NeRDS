@@ -77,9 +77,7 @@ Begin bij wat je functioneel wilt bereiken; cloud is een middel. Hoe gevoelig je
 
 Koppel applicatie en data los van het onderliggende platform, zodat je kunt verhuizen als dat nodig is. Open source en open standaarden zijn daarvoor de basis (zie Werk transparant en gebruik open source (skill `/nerds-opensource`)).
 
-Ontwikkelen & ontwerpen
-
-**Praktische tips**
+**Praktische tips voor ontwikkelen en ontwerpen**
 
 - **Bouw op open source en open standaarden** - Kies componenten die op meerdere platformen draaien, zoals [Kubernetes](https://kubernetes.io/) volgens de [Haven-standaard](https://haven.commonground.nl/). Isoleer diensten die maar bij één leverancier bestaan achter een eigen interface.
 - **Ontwerp je exit vanaf dag één** - Dek een geplande overstap en een onverwachte uitval af, met een back-up buiten de cloudomgeving van dezelfde leverancier.
@@ -90,9 +88,7 @@ Ontwikkelen & ontwerpen
 - **Bouw kennis op in je eigen organisatie** - Zorg dat eigen mensen het platform begrijpen en kunnen bedienen.
 - **Beveilig en borg privacy vanaf het ontwerp** - Zie Maak veilige systemen (skill `/nerds-veiligheid`) en Maak privacy integraal (skill `/nerds-privacy`).
 
-Inkopen
-
-**Praktische tips**
+**Praktische tips voor inkopen**
 
 - **Volg het cloudbeleid** - Meld materieel cloudgebruik vooraf bij CISO Rijk. Wijk je af van het beleid, meld dat dan vooraf bij CIO Rijk.
 - **Kies soeverein of Europees waar het kan** - Leg bij een niet-Europese leverancier vast hoe je eruit komt.

@@ -36,6 +36,17 @@ HEADING = re.compile(r'<h(?P<level>[1-6])(?: id="(?P<id>[^"]*)")?[^>]*>')
 # A checklist directly under a heading: that heading names the list.
 LABELLED_CHECKLIST = re.compile(r'(?P<heading></h[1-6]>\s*)<ul class="checklist">')
 GUIDELINE_CARDS = re.compile(r'<div class="richtlijnen-cards"(?: data-heading-level="(?P<level>[2-6])")?></div>')
+# A blockquote that opens with a bold line only is a note with a title, not a
+# quote. CONTRIBUTING.md writes notes that way so they read well on GitHub too.
+TITLED_NOTE = re.compile(
+    r"<blockquote>\s*<p><strong>(?P<title>[^<]+)</strong></p>(?P<body>.*?)</blockquote>",
+    flags=re.DOTALL,
+)
+# Links that release-please writes into the changelog: a bare "#458" or "6cf3c2b".
+GITHUB_REFERENCE = re.compile(
+    r'<a href="(?P<href>https://github\.com/[^"]+/(?P<kind>issues|pull|commit)/[^"]+)">'
+    r"(?P<text>#\d+|[0-9a-f]{7,40})</a>"
+)
 
 
 class NlddBlockElements(Extension):
@@ -71,6 +82,8 @@ def on_page_content(html, page, config, files):
     html = html.replace('<ul class="task-list">', '<ul class="checklist">')
     html = LABELLED_CHECKLIST.sub(_label_checklist, html)
     html = CODE_BLOCK.sub(_replace_code_block, html)
+    html = TITLED_NOTE.sub(_replace_titled_note, html)
+    html = GITHUB_REFERENCE.sub(_name_github_reference, html)
     html = GUIDELINE_CARDS.sub(
         lambda match: _generate_guideline_cards(page, config, files, match.group("level") or "2"), html
     )
@@ -94,6 +107,14 @@ def _replace_admonition(match):
             f"<nldd-rich-text>{body}</nldd-rich-text></nldd-banner>"
         )
 
+    return _note_box(title, body, match)
+
+
+def _replace_titled_note(match):
+    return _note_box(escape(match.group("title").strip()), match.group("body").strip(), match)
+
+
+def _note_box(title, body, match):
     # The title is a heading one level below the section the box sits in, so
     # it shows up in the outline instead of reading as a loose paragraph.
     levels = [int(found.group("level")) for found in HEADING.finditer(match.string, 0, match.start())]
@@ -105,6 +126,15 @@ def _replace_admonition(match):
         f"<nldd-rich-text>{body}</nldd-rich-text>"
         "</nldd-container></nldd-box>"
     )
+
+
+def _name_github_reference(match):
+    """
+    Say what a bare "#458" or "6cf3c2b" points at, in the visible text, so the
+    link name holds up when a screen reader lists the links on their own.
+    """
+    kind = "commit" if match.group("kind") == "commit" else "PR"
+    return f'<a href="{match.group("href")}">{kind} {match.group("text")}</a>'
 
 
 def _label_checklist(match):

@@ -88,8 +88,7 @@ Begin bij wat je functioneel wilt bereiken; cloud is een middel. Hoe gevoelig je
 
 Koppel applicatie en data los van het onderliggende platform, zodat je kunt verhuizen als dat nodig is. Open source en open standaarden zijn daarvoor de basis (zie [Werk transparant en gebruik open source](../open-source/index.md){:target="_blank"}).
 
-Ontwikkelen & ontwerpen
-??? expander "Praktische tips"
+??? expander "Praktische tips voor ontwikkelen en ontwerpen"
     - **Bouw op open source en open standaarden** - Kies componenten die op meerdere platformen draaien, zoals [Kubernetes](https://kubernetes.io/){:target="_blank"} volgens de [Haven-standaard](https://haven.commonground.nl/){:target="_blank"}. Isoleer diensten die maar bij één leverancier bestaan achter een eigen interface.
     - **Ontwerp je exit vanaf dag één** - Dek een geplande overstap en een onverwachte uitval af, met een back-up buiten de cloudomgeving van dezelfde leverancier.
     - **Zet je infrastructuur in code** - Met Infrastructure as Code, bijvoorbeeld [OpenTofu](https://opentofu.org/){:target="_blank"}, en [GitOps](https://opengitops.dev/){:target="_blank"} bouw je een omgeving elders opnieuw op.
@@ -99,8 +98,7 @@ Ontwikkelen & ontwerpen
     - **Bouw kennis op in je eigen organisatie** - Zorg dat eigen mensen het platform begrijpen en kunnen bedienen.
     - **Beveilig en borg privacy vanaf het ontwerp** - Zie [Maak veilige systemen](../veiligheid/index.md){:target="_blank"} en [Maak privacy integraal](../privacy/index.md){:target="_blank"}.
 
-Inkopen
-??? expander "Praktische tips"
+??? expander "Praktische tips voor inkopen"
     - **Volg het cloudbeleid** - Meld materieel cloudgebruik vooraf bij CISO Rijk. Wijk je af van het beleid, meld dat dan vooraf bij CIO Rijk.
     - **Kies soeverein of Europees waar het kan** - Leg bij een niet-Europese leverancier vast hoe je eruit komt.
     - **Stel soevereiniteitseisen** - Vraag naar eigendom, toepasselijk recht, de locatie van data en beheer, en wat er gebeurt bij een overname. Met de SEAL-niveaus vergelijk je de antwoorden.

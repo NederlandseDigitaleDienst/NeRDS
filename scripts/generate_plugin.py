@@ -62,6 +62,8 @@ OVERVIEW_PATH = SKILLS_DIR / "nerds" / "richtlijnen.md"
 
 FRONT_MATTER = re.compile(r"\A---\n(.*?)\n---\n+", re.DOTALL)
 ATTRIBUTE_LIST = re.compile(r"\{:[^}]*\}")
+# Words in another language, for a screen reader on the site; a skill keeps the words.
+LANGUAGE_SPAN = re.compile(r'<span lang="[a-z-]+">(.*?)</span>')
 # A Markdown link to another page of the site: a relative path ending in .md.
 PAGE_LINK = re.compile(r"\[([^\]]+)\]\((?!https?://|#|mailto:)([^)#\s]*\.md)(#[^)\s]*)?\)")
 GUIDELINE_SKILLS = {guideline: skill for skill, guideline in SKILL_GUIDELINES.items()}
@@ -294,7 +296,7 @@ def skill_text(source: Path, guideline: str) -> str:
         return f"[{label}]({site_url()}{'' if address == '.' else address + '/'}{anchor})"
 
     def outside_code(segment: str) -> str:
-        segment = PAGE_LINK.sub(relink, ATTRIBUTE_LIST.sub("", segment))
+        segment = PAGE_LINK.sub(relink, LANGUAGE_SPAN.sub(r"\1", ATTRIBUTE_LIST.sub("", segment)))
         return plain_admonitions(action_lists(segment))
 
     body = FRONT_MATTER.sub("", source.read_text(encoding="utf-8"), count=1)

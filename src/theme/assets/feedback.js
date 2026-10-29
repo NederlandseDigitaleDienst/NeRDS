@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     guideline.value = option ? option.value : '0';
   }
 
-  document.getElementById('feedback-add-link').addEventListener('click', () => {
+  document.getElementById('feedback-add-link').addEventListener('click', async () => {
     // A copy of the first field, without what that field holds: its value and
     // a verdict on that value.
     const field = links.firstElementChild.cloneNode(true);
@@ -51,7 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
     field.querySelector('nldd-validation-list').removeAttribute('judging');
     field.querySelectorAll('nldd-validation-item').forEach((item) => item.removeAttribute('unmet'));
     links.append(field);
+    // The copy is a new component: it takes focus only once it has rendered,
+    // and the sheet does not scroll it into view by itself.
+    await input.updateComplete;
     input.focus();
+    input.scrollIntoView({ block: 'nearest' });
   });
 
   function normalizeUrl(url) {
