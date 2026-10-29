@@ -72,9 +72,5 @@
 </nldd-shell>
 {% include "partials/search.html" %}
 {% include "partials/feedback.html" %}
-{%- if page and 'id="open-cluster-form"' in page.content %}
-{% include "partials/cluster-form.html" %}
-<script defer src="{{ 'assets/cluster-form.js' | url }}"></script>
-{%- endif %}
 </body>
 </html>

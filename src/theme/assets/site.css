@@ -103,8 +103,3 @@ nldd-rich-text details.expander > :not(summary) {
 nldd-rich-text details.expander > :last-child:not(summary) {
 	margin-block-end: var(--primitives-space-16);
 }
-
-/* The activity indicator fills its parent, so the parent needs a height. */
-.cluster-progress {
-	min-height: 12rem;
-}
