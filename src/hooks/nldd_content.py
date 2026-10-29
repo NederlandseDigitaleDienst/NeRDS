@@ -155,7 +155,7 @@ def _generate_guideline_cards(page, config, files, heading_level):
         icon = escape(str(front_matter.get("icon", "file-text")))
         summary = escape(str(front_matter.get("summary", "")))
         cards.append(
-            f'''  <nldd-card href="{escape(url)}" accessible-label="{escape(title)}">
+            f'''  <nldd-card role="listitem" href="{escape(url)}" accessible-label="{escape(title)}">
     <nldd-container padding="16" gap="8">
       <nldd-icon icon="{icon}" size="32" color="lintblauw"></nldd-icon>
       <nldd-title size="5" heading-level="{heading_level}" text="{escape(title)}"></nldd-title>
@@ -164,4 +164,4 @@ def _generate_guideline_cards(page, config, files, heading_level):
   </nldd-card>'''
         )
 
-    return '<nldd-collection layout="grid" item-min-width="280px">\n' + "\n".join(cards) + "\n</nldd-collection>"
+    return '<nldd-collection role="list" layout="grid" item-min-width="280px">\n' + "\n".join(cards) + "\n</nldd-collection>"

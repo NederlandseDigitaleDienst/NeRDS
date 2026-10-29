@@ -21,10 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const text = document.getElementById('feedback-text');
   const links = document.getElementById('feedback-related-docs-container');
   const success = document.getElementById('feedback-success');
+  const status = document.getElementById('feedback-status');
   const errors = document.getElementById('feedback-errors');
 
   opener.addEventListener('click', () => {
     success.hidden = true;
+    status.textContent = '';
     errors.hidden = true;
     selectCurrentGuideline();
     sheet.show();
@@ -162,6 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
     errors.hidden = true;
     success.setAttribute('supporting-text', message);
     success.hidden = false;
+    status.textContent = `${success.getAttribute('text')} ${message}`;
   }
 
   // The component renders a real form in the light DOM; its submit event

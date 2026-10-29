@@ -5,6 +5,9 @@
       <nldd-rich-text>
         <p>Helpt u ons door uw feedback te delen? We gebruiken dit om NeRDS te verbeteren. U kunt feedback geven via e-mail of via GitHub Issues.</p>
       </nldd-rich-text>
+      {#- A live region that appears together with its text stays silent, so the
+          confirmation is also read out from a region that is there from the start. #}
+      <p id="feedback-status" class="visually-hidden" role="status"></p>
       <nldd-banner id="feedback-success" variant="success" text="Bedankt voor uw feedback!" hidden></nldd-banner>
       {#- In the DOM from the start, so that a screen reader reads it out when it appears. #}
       <nldd-banner id="feedback-errors" variant="critical" role="alert" text="Uw feedback is nog niet verstuurd" hidden></nldd-banner>
