@@ -17,6 +17,8 @@ repos:
         exclude: mkdocs.yml
       - id: check-json
       - id: check-added-large-files
+        # A signed accessibility report is published on purpose, with its screenshots.
+        exclude: ^docs/Over-NeRDS/toegankelijkheidsonderzoek-\d{4}-\d{2}-\d{2}\.pdf$
       - id: check-merge-conflict
       - id: check-toml
       - id: detect-private-key
