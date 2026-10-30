@@ -57,7 +57,7 @@ jobs:
         run: |
           sed -i "s#^site_url: .*#site_url: ${PREVIEW_URL}/#" mkdocs.yml
 
-      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e  # v10.3.2
 
       - name: build preview
         run: uv run --locked mkdocs build
@@ -131,7 +131,7 @@ jobs:
       url: ${{ steps.deploy.outputs.url }}
     steps:
       - id: deploy
-        uses: RijksICTGilde/zad-actions/deploy@4ac541a57542a22bde95b28f3ace4ee3123acd7a  # v4.2.0
+        uses: RijksICTGilde/zad-actions/deploy@4217ceaa5c347f3c6d16142b5ad8ab94110c4cdb  # v4.4.0
         with:
           # API-key van het ZAD-project.
           api-key: ${{ secrets.ZAD_API_KEY }}
@@ -171,7 +171,7 @@ jobs:
       # De images van deze PR gaan weg uit GHCR.
       packages: write
     steps:
-      - uses: RijksICTGilde/zad-actions/cleanup@4ac541a57542a22bde95b28f3ace4ee3123acd7a  # v4.2.0
+      - uses: RijksICTGilde/zad-actions/cleanup@4217ceaa5c347f3c6d16142b5ad8ab94110c4cdb  # v4.4.0
         with:
           api-key: ${{ secrets.ZAD_API_KEY }}
           project-id: ${{ env.PROJECT_ID }}
