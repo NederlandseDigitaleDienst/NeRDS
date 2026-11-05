@@ -11,9 +11,6 @@ In het register van toegankelijkheidsverklaringen heeft de NeRDS **status B: vol
 
 Lees de [toegankelijkheidsverklaring van de NeRDS](https://www.toegankelijkheidsverklaring.nl/register/30277) voor wat er is onderzocht, wat er nog niet voldoet en wat eraan gebeurt. Daar meld je ook een toegankelijkheidsprobleem.
 
-Op 29 oktober 2026 is de website opnieuw onderzocht. Lees het [rapport van dat onderzoek (pdf)](toegankelijkheidsonderzoek-2026-10-29.pdf). Van de negen gevonden problemen zijn er zes opgelost. Drie succescriteria voldoen nog niet:
-
-- 1.3.1 Info en relaties: de links in de kop en de voet van de pagina staan voor hulpsoftware niet in een lijst.
-- 1.4.1 Gebruik van kleur en 1.4.11 Contrast van niet-tekstuele content: de huidige pagina in het menu is alleen te herkennen aan een lichtgrijs vlak.
+Op 29 oktober 2026 is de website opnieuw onderzocht. Lees het [rapport van dat onderzoek (pdf)](toegankelijkheidsonderzoek-2026-10-29.pdf). Van de negen gevonden problemen zijn er acht opgelost. Eén succescriterium voldoet nog niet: 1.3.1 Info en relaties. De links in de kop en de voet van de pagina staan voor hulpsoftware niet in een lijst. Dat lost het NLDD Designsysteem op, en daarna neemt de NeRDS de nieuwe versie over.
 
 Loop je op deze website ergens tegenaan? Laat het weten via [Contact en bijdragen](CONTRIBUTING.md).
