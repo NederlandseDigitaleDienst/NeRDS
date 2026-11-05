@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.5.0](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.4.0...v0.5.0) (2026-11-05)
+
+
+### Nieuw
+
+* alleen de gebruikte componenten van het designsysteem laden ([#474](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/474)) ([a976f5e](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/a976f5e97149e0e6b18240bec3529a212052af0c))
+
 ## [0.4.0](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.14...v0.4.0) (2026-11-05)
 
 
