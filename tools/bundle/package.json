@@ -1,0 +1,9 @@
+{
+  "name": "nerds-bundle",
+  "private": true,
+  "description": "Bundles only the design system components the built site uses.",
+  "dependencies": {
+    "@nldd/design-system": "0.16.0",
+    "esbuild": "0.28.2"
+  }
+}

@@ -21,3 +21,4 @@ site
 
 # Tools for the accessibility gate
 tools/a11y/node_modules/
+tools/bundle/node_modules/

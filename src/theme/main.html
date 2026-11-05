@@ -21,7 +21,7 @@
   {%- for path in config.extra_css %}
   <link rel="stylesheet" href="{{ path | url }}">
   {%- endfor %}
-  <script defer src="{{ 'assets/nldd/nldd.min.js' | url }}"></script>
+  <script type="module" src="{{ 'assets/nldd/nldd.js' | url }}"></script>
   <script defer src="{{ 'assets/site.js' | url }}"></script>
   <script defer src="{{ 'assets/search.js' | url }}"></script>
   <script defer src="{{ 'assets/feedback.js' | url }}"></script>

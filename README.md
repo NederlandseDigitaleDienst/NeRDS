@@ -33,6 +33,9 @@ uv installeert bij de eerste keer zelf de juiste Python en de afhankelijkheden u
 
 De website gebruikt de web components van het NLDD Designsysteem. De versie staat vast in
 `nldd-design-system.json`. Bij de eerste build wordt dat pakket eenmalig gedownload naar `.cache/nldd/`.
+De build bundelt met esbuild alleen de componenten die de pagina's gebruiken. Daarvoor heb je Node nodig. De versies
+van esbuild en het designsysteem staan in `tools/bundle/package.json`; die van het designsysteem moet gelijk zijn aan
+die in `nldd-design-system.json`.
 
 Controleer een wijziging aan het thema of aan de inhoud met:
 
