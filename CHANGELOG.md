@@ -2,6 +2,22 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.4.0](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.14...v0.4.0) (2026-11-05)
+
+
+### Nieuw
+
+* nldd lint van het designsysteem in pre-commit en CI ([#473](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/473)) ([2783d91](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/2783d91dd26c90c9eaf9f75af8c684a4c4c34b18))
+
+
+### Verbeterd
+
+* huidige pagina in het zijmenu weer vet naast het grijze vlak ([#471](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/471)) ([c4ed74f](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/c4ed74fa77d61efd46e1dbdae9cc6c58da4ada00))
+* NLDD Designsysteem 0.16.0 ([#472](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/472)) ([6f15a24](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/6f15a24727e0519c9a225944a9808256623d8fb6))
+* rapport van het toegankelijkheidsonderzoek met de besluiten van 29 oktober ([#468](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/468)) ([e227246](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/e2272469e01e139af79736f673a053d5080ee15c))
+* rapport van het toegankelijkheidsonderzoek van 29 oktober 2026 op de site ([#466](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/466)) ([77f8af8](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/77f8af8c491267cf5948b69b4ac3c0475fa73bd6))
+* toegankelijkheidsverklaring met status B van 5 november 2026 ([#470](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/470)) ([911b2f6](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/911b2f69ef2d3dfcc10ece6349bba1573ff9ea87))
+
 ## [0.3.14](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.3.13...v0.3.14) (2026-10-29)
 
 
