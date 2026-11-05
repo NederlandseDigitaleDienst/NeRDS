@@ -7,10 +7,13 @@ title: Toegankelijkheid
 
 De Nederlandse Digitale Dienst wil dat iedereen deze website kan gebruiken. Dat is ook wettelijk verplicht: de website moet voldoen aan het Besluit digitale toegankelijkheid overheid.
 
-In het register van toegankelijkheidsverklaringen heeft de NeRDS **status D: voldoet niet**. Die status is toegekend op basis van een eigen verklaring, van 27 oktober 2025.
+In het register van toegankelijkheidsverklaringen heeft de NeRDS **status B: voldoet gedeeltelijk**. Die status is toegekend op basis van een eigen verklaring, van 5 november 2026.
 
-Lees de [toegankelijkheidsverklaring van de NeRDS](https://www.toegankelijkheidsverklaring.nl/register/28093) voor wat er is onderzocht en wat er nog niet voldoet. Daar meld je ook een toegankelijkheidsprobleem.
+Lees de [toegankelijkheidsverklaring van de NeRDS](https://www.toegankelijkheidsverklaring.nl/register/30277) voor wat er is onderzocht, wat er nog niet voldoet en wat eraan gebeurt. Daar meld je ook een toegankelijkheidsprobleem.
 
-Op 29 oktober 2026 is de website opnieuw onderzocht op WCAG 2.2 niveau A en AA. Lees het [rapport van dat onderzoek (pdf)](toegankelijkheidsonderzoek-2026-10-29.pdf).
+Op 29 oktober 2026 is de website opnieuw onderzocht. Lees het [rapport van dat onderzoek (pdf)](toegankelijkheidsonderzoek-2026-10-29.pdf). Van de negen gevonden problemen zijn er zes opgelost. Drie succescriteria voldoen nog niet:
+
+- 1.3.1 Info en relaties: de links in de kop en de voet van de pagina staan voor hulpsoftware niet in een lijst.
+- 1.4.1 Gebruik van kleur en 1.4.11 Contrast van niet-tekstuele content: de huidige pagina in het menu is alleen te herkennen aan een lichtgrijs vlak.
 
 Loop je op deze website ergens tegenaan? Laat het weten via [Contact en bijdragen](CONTRIBUTING.md).
