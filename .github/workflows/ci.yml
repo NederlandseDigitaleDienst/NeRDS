@@ -33,6 +33,11 @@ jobs:
 
       - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
 
+      # For nldd lint, which needs Node 20.19 or newer.
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+
       - name: Bouw de website en controleer tegen het designsysteem
         run: uv run --locked python scripts/check_site.py
 

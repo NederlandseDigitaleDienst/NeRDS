@@ -46,10 +46,10 @@
   <nldd-title size="6" text="Op deze pagina"></nldd-title>
   <nldd-list type="navigation" aria-label="Op deze pagina">
     {%- for heading in headings %}
-    <nldd-list-item href="{{ heading.url }}">
+    <nldd-list-item href="{{ heading.url }}" current-type="location">
       <nldd-text-cell size="sm" text="{{ heading.title | striptags | e }}"></nldd-text-cell>
       {%- for subheading in heading.children %}
-      <nldd-list-item slot="children" href="{{ subheading.url }}">
+      <nldd-list-item slot="children" href="{{ subheading.url }}" current-type="location">
         <nldd-spacer-cell size="16"></nldd-spacer-cell>
         <nldd-text-cell size="sm" color="secondary" text="{{ subheading.title | striptags | e }}"></nldd-text-cell>
       </nldd-list-item>
