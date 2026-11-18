@@ -150,7 +150,7 @@ In richtlijn hoef je hier niets aan aan te passen, maar als je een nieuwe pagina
 Onderdeel van deze settings is namelijk de navigatie voor de site (welke pagina's zijn zichtbaar, en welke pagina's vallen daaronder). Dit staat in de nav: sectie.
 Indien je een nieuwe pagina wilt toevoegen, is het vaak nodig deze wijziging ook door te voeren in het [mkdocs.yml](https://github.com/NederlandseDigitaleDienst/NeRDS/blob/main/mkdocs.yml) bestand.
 
-Een nieuwe richtlijn krijgt bovenaan de pagina een `title`, een `summary` en een `icon`. De kaarten op de startpagina en op het overzicht van richtlijnen worden daaruit opgebouwd. Voor `icon` kies je een naam uit de [iconen van het NLDD Designsysteem](https://nederlandsedigitaledienst.github.io/design-system/); een naam die niet bestaat laat de controle hierboven falen.
+Een nieuwe richtlijn krijgt bovenaan de pagina een `title`, een `summary` en een `icon`. De kaarten op de startpagina en op het overzicht van richtlijnen worden daaruit opgebouwd. Voor `icon` kies je een naam uit de [iconen van het NLDD Designsysteem](https://design.digitaledienst.overheid.nl/iconen/); een naam die niet bestaat laat de controle hierboven falen.
 
 ## Richtlijnen voor bijdragen
 
