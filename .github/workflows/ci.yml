@@ -18,7 +18,7 @@ jobs:
       - name: Valideer plugin.json
         run: python3 -c "import json; json.load(open('.plugin/plugin.json'))"
 
-      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2  # v10.3.3
 
       # Met uv, omdat het script het actieregister (YAML) leest.
       - name: Controleer plugin sync
@@ -31,10 +31,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: astral-sh/setup-uv@c18668ad3cf93ea998bef934396af7bb5c839dc7  # v10.2.0
+      - uses: astral-sh/setup-uv@68559e99cc807c1eb7e9238fd43a15bba460eec2  # v10.3.3
 
       # For nldd lint, which needs Node 20.19 or newer.
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
 
