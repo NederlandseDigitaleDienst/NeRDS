@@ -3,8 +3,10 @@
     (1.3:1) to tell it apart, and color may not be the only sign. -#}
 {%- macro cell(text, current, size='', hidden='') -%}
 <nldd-text-cell{% if size %} size="{{ size }}"{% endif %}>
-  {%- if hidden %}<span class="visually-hidden">{{ hidden | e }}</span>{% endif -%}
-  {%- if current %}<strong>{{ text | e }}</strong>{% else %}{{ text | e }}{% endif -%}
+  <p>
+    {%- if hidden %}<span class="visually-hidden">{{ hidden | e }}</span>{% endif -%}
+    {%- if current %}<strong>{{ text | e }}</strong>{% else %}{{ text | e }}{% endif -%}
+  </p>
 </nldd-text-cell>
 {%- endmacro %}
 <nldd-list type="navigation" aria-label="{{ section.item.title | e }}">
@@ -43,7 +45,7 @@
 {%- endif %}
 {%- if headings and not (page.meta.hide and 'toc' in page.meta.hide) %}
 <nldd-container gap="8">
-  <nldd-title size="6" text="Op deze pagina"></nldd-title>
+  <nldd-text size="display-6" text="Op deze pagina"></nldd-text>
   <nldd-list type="navigation" aria-label="Op deze pagina">
     {%- for heading in headings %}
     <nldd-list-item href="{{ heading.url }}" current-type="location">

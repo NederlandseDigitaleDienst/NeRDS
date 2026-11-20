@@ -3,7 +3,7 @@
   "private": true,
   "description": "Bundles only the design system components the built site uses.",
   "dependencies": {
-    "@nldd/design-system": "0.16.0",
+    "@nldd/design-system": "0.27.1",
     "esbuild": "0.28.2"
   }
 }
