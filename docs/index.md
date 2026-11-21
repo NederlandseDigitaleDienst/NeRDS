@@ -66,5 +66,3 @@ hide:
     <nldd-button appearance="secondary" href="Over-NeRDS/CONTRIBUTING/" text="Draag bij aan NeRDS"></nldd-button>
   </nldd-button-group>
 </nldd-simple-section>
-
-<!-- Proef: een commit van het team op de upgrade-branch. -->
