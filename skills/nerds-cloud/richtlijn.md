@@ -109,6 +109,7 @@ Een exitplan dat nooit is geoefend, is een aanname. Het aanbod en het beleid ver
 - **Herijk je afhankelijkheden** - Kijk periodiek of er een Europees of soeverein alternatief is gekomen, en of eigenaarschap of jurisdictie van je leverancier is veranderd.
 - **Beheers de kosten** - Stel budgetlimieten in en betrek finance en engineering bij cloudbeslissingen. Zie de [FinOps Foundation](https://www.finops.org/).
 - **Monitor beveiliging en prestaties** - Bewaak je omgeving, meet tegen je SLO's en voer regelmatig audits uit.
+- **Evalueer elke storing** - Zonder schuldvraag, met een eigenaar per verbeteractie. Zie Leer van wat misgaat (skill `/nerds-samenwerking`).
 - **Deel wat je leert** - Publiceer ervaringen binnen de overheid.
 
 ## Implementatie per fase
