@@ -7,7 +7,7 @@
 <nldd-spacer size="32"></nldd-spacer>
 <nldd-container layout="wrap" gap="16" vertical-alignment="center">
   {%- if page.meta.git_revision_date_localized %}
-  <nldd-text size="sm" color="secondary">Laatst bijgewerkt: {{ page.meta.git_revision_date_localized }}</nldd-text>
+  <nldd-text size="sm" color="secondary"><span>Laatst bijgewerkt: {{ page.meta.git_revision_date_localized }}</span></nldd-text>
   {%- endif %}
   {%- if page.edit_url %}
   <nldd-link size="sm" href="{{ page.edit_url }}" start-icon="pencil" text="Bewerk deze pagina op GitHub"></nldd-link>

@@ -38,6 +38,10 @@ def lint(site_dir: str) -> int:
         return 1
     pin = json.loads(DESIGN_SYSTEM.read_text())
     package = f"{pin['package']}@{pin['version']}"
+    # assets/nldd holds the design system's own bundle, not ours. nldd lint up to
+    # 0.27.1 only knows it as such in a directory named dist or build, and would
+    # report its component styles as overrides of ours.
+    (Path(site_dir) / ".nldd-lint.json").write_text('{"exclude": ["assets/nldd"]}\n')
     # From inside the build, so a finding names the page, such as Over-NeRDS/index.html.
     arguments = [npx, "--yes", package, "lint", ".", "--max-warnings", "0"]
     if os.environ.get("GITHUB_ACTIONS"):
