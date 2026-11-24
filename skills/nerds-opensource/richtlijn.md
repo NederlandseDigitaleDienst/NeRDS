@@ -76,6 +76,7 @@ Onderhoud je open source project actief: Reageer snel op security issues, monito
 - **Communiceer onderhoudsniveau** - Wees duidelijk over of het digitale systeem "actively maintained", "maintenance mode" of "archived" is.
 - **Gebruik Semantic Versioning** - Versies in [major.minor.patch](https://semver.org/) formaat voor duidelijkheid.
 - **Draag bij aan upstream** - Geef terug aan projecten waar je van afhankelijk bent.
+- **Wees open over wat misging** - Publiceer een evaluatie na een storing of kwetsbaarheid, zonder schuldvraag. Zie Leer van wat misgaat (skill `/nerds-samenwerking`).
 - **Deel je bevindingen** - Publiceer blogposts en presentaties over je ervaringen. Deel kennis via de [opensourcewerken community](https://developer.overheid.nl/communities/open-source-werken).
 
 ## Implementatie per fase
