@@ -2,6 +2,13 @@
 
 Hier staat per versie wat er aan de NeRDS is veranderd. De website en de plugin voor AI-assistenten dragen hetzelfde versienummer als de richtlijn.
 
+## [0.6.0](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.5.0...v0.6.0) (2026-11-24)
+
+
+### Nieuw
+
+* evalueren zonder schuldvraag bij samenwerken ([#482](https://github.com/NederlandseDigitaleDienst/NeRDS/issues/482)) ([dfc0600](https://github.com/NederlandseDigitaleDienst/NeRDS/commit/dfc060060ebc779c784386dc9e026e4e88e461b1))
+
 ## [0.5.0](https://github.com/NederlandseDigitaleDienst/NeRDS/compare/v0.4.0...v0.5.0) (2026-11-05)
 
 
