@@ -38,7 +38,7 @@ Dat lukt alleen als niemand bang hoeft te zijn. Een evaluatie zonder schuldvraag
 - **Laat leidinggevenden het goede voorbeeld geven** - Wie zelf een fout openlijk bespreekt, maakt het voor het team veilig om hetzelfde te doen.
 - **Geef elke verbeteractie een eigenaar en een datum** - Kijk later na of de actie is uitgevoerd.
 - **Publiceer de evaluatie** - Eerst binnen je organisatie, en waar het kan openbaar, zodat andere overheden er ook van leren. Een bekend voorbeeld is de [openbare evaluatie van GitLab na het verlies van een productiedatabase](https://about.gitlab.com/blog/2017/02/10/postmortem-of-database-outage-of-january-31/).
-- **Een evaluatie vervangt geen melding** - Een datalek meld je binnen 72 uur bij de [Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl/themas/beveiliging/datalekken), ook als de evaluatie nog loopt.
+- **Een evaluatie vervangt geen melding** - Een datalek meld je binnen 72 uur na ontdekking bij de [Autoriteit Persoonsgegevens](https://www.autoriteitpersoonsgegevens.nl/themas/beveiliging/datalekken), ook als de evaluatie nog loopt.
 
 ## Gerelateerde hulpmiddelen
 
