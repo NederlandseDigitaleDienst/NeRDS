@@ -58,6 +58,11 @@ jobs:
       #   rijksoverheid.nl, digitaleoverheid.nl, wetten.overheid.nl) are skipped
       #   here and checked in the next step, which tolerates a refused runner
       #   but still fails on a page that is gone.
+      # - github.com/.../NeRDS/compare/: release-please writes a compare link
+      #   to the new tag into the changelog, and that tag only exists once the
+      #   release PR is merged.
+      # Retries and accepting 429 and 503: github.com regularly answers a CI
+      # runner with 503 (rate limiting). A 404 or 410 still fails.
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v2.9.0
@@ -66,7 +71,11 @@ jobs:
           args: >-
             --verbose
             --no-progress
+            --max-retries 3
+            --retry-wait-time 5
+            --accept "100..=103,200..=299,429,503"
             --exclude-loopback
+            --exclude "https://github\.com/NederlandseDigitaleDienst/NeRDS/compare/.*"
             --exclude "file:///.*/issues.*"
             --exclude "file:///home/runner/work/.*"
             --exclude "https://rijksportaal.overheid-i.nl/.*"
@@ -90,9 +99,9 @@ jobs:
           # Output file for creating issues
           output: ./lychee/out.md
 
-      # These sites sometimes answer a CI runner with 403, 429 or 503 while the
-      # page works for visitors. Those statuses pass, a 404 or 410 fails, so a
-      # policy document that moved or disappeared is still caught.
+      # These sites sometimes answer a CI runner with 403, 429, 502, 503 or 504
+      # while the page works for visitors. Those statuses pass, a 404 or 410
+      # fails, so a policy document that moved or disappeared is still caught.
       - name: Link Checker (government sources)
         id: lychee-government
         if: ${{ !cancelled() }}
@@ -102,7 +111,8 @@ jobs:
             --verbose
             --no-progress
             --max-retries 3
-            --accept "100..=103,200..=299,403,429,503"
+            --retry-wait-time 5
+            --accept "100..=103,200..=299,403,429,502,503,504"
             --exclude ".*"
             --include "https://www\.tweedekamer\.nl/.*"
             --include "https://zoek\.officielebekendmakingen\.nl/.*"
