@@ -94,7 +94,7 @@ def on_page_content(html, page, config, files):
 
         return f'''<nldd-box data-rich-text-width="main">
   <nldd-container padding="16" gap="16">
-    <nldd-title size="4" heading-level="{level}" text="{escape(_plain_text(match.group('heading')))}"></nldd-title>
+    <nldd-title size="display-4" heading-level="{level}" text="{escape(_plain_text(match.group('heading')))}"></nldd-title>
 {_generate_notice_html(match.group('notice'))}    <nldd-collection layout="grid" item-min-width="240px" gap="12"{attributes}>
 {_generate_action_cards_html(filtered_actions, level + 1)}
     </nldd-collection>
@@ -223,7 +223,7 @@ def _generate_action_cards_html(actions, heading_level=4):
 
         card_html = f'''      <nldd-card>
         <nldd-container padding="16" gap="8">
-          <nldd-title size="5" heading-level="{heading_level}" text="{escape(action.get('name', ''))}">
+          <nldd-title size="display-5" heading-level="{heading_level}" text="{escape(action.get('name', ''))}">
             <nldd-badge slot="supporting-text" size="sm" color="{color}" text="{escape(status)}"></nldd-badge>
           </nldd-title>
           <nldd-rich-text><p>{escape(action.get('description', ''))}</p></nldd-rich-text>

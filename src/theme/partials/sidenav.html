@@ -43,7 +43,7 @@
 {%- endif %}
 {%- if headings and not (page.meta.hide and 'toc' in page.meta.hide) %}
 <nldd-container gap="8">
-  <nldd-title size="6" text="Op deze pagina"></nldd-title>
+  <nldd-title size="display-6" text="Op deze pagina"></nldd-title>
   <nldd-list type="navigation" aria-label="Op deze pagina">
     {%- for heading in headings %}
     <nldd-list-item href="{{ heading.url }}" current-type="location">

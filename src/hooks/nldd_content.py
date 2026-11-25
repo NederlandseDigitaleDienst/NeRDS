@@ -122,7 +122,7 @@ def _note_box(title, body, match):
 
     return (
         '<nldd-box data-rich-text-width="main"><nldd-container padding="16" gap="4">'
-        f'<nldd-title size="6" heading-level="{level}" text="{title}"></nldd-title>'
+        f'<nldd-title size="display-6" heading-level="{level}" text="{title}"></nldd-title>'
         f"<nldd-rich-text>{body}</nldd-rich-text>"
         "</nldd-container></nldd-box>"
     )
@@ -188,7 +188,7 @@ def _generate_guideline_cards(page, config, files, heading_level):
             f'''  <nldd-card href="{escape(url)}" accessible-label="{escape(title)}">
     <nldd-container padding="16" gap="8">
       <nldd-icon icon="{icon}" size="32" color="lintblauw"></nldd-icon>
-      <nldd-title size="5" heading-level="{heading_level}" text="{escape(title)}"></nldd-title>
+      <nldd-title size="display-5" heading-level="{heading_level}" text="{escape(title)}"></nldd-title>
       <nldd-rich-text><p>{summary}</p></nldd-rich-text>
     </nldd-container>
   </nldd-card>'''
